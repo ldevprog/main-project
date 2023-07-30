@@ -1,3 +1,10 @@
-body {
-    background-color: #70f;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    font-size: 100;
+    color: red;
 }

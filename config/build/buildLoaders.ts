@@ -3,11 +3,23 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import { BuildOptions } from "./types/config";
 
 export function buildLoaders(options: BuildOptions): RuleSetRule[] {
+    const { isDev } = options;
+
     const cssLoader = {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.s[a|c]ss$/,
         use: [
-            options.isDev ? "style-loader" : MiniCssExtractPlugin.loader,
-            "css-loader",
+            isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+            {
+                loader: "css-loader",
+                options: {
+                    modules: {
+                        auto: /\.module.scss$/,
+                        localIdentName: isDev
+                            ? "[path][name]__[local]--[hash:base64:5]"
+                            : "[hash:base64:8]",
+                    },
+                },
+            },
             "sass-loader",
         ],
     };

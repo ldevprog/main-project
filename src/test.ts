@@ -1,5 +1,4 @@
 export function testFunc(a: string): number {
-    console.log("hello world " + a);
-
+    console.log("sdfsdfsdfsdf");
     return 4;
 }

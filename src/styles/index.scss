@@ -1,0 +1,13 @@
+@import "./reset.scss";
+@import "./variables/global.scss";
+@import "./themes/light.scss";
+@import "./themes/dark.scss";
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    font: var(--font-m);
+}

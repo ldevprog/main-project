@@ -6,5 +6,6 @@ export function buildDevServer(options: BuildOptions): DevServerConfiguration {
         static: "./dist",
         port: options.port,
         hot: true,
+        historyApiFallback: true,
     };
 }

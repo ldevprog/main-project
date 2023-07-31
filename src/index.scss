@@ -5,6 +5,7 @@
 }
 
 .app {
-    font-size: 100;
-    color: red;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }

@@ -1,7 +1,7 @@
-import { AppRouter } from "./components/AppRouter/AppRouter";
-import { Navbar } from "./components/Navbar/Navbar";
-import { useTheme } from "./theme/useTheme";
-import { classNames } from "./utils/classNames";
+import { AppRouter } from "./router/AppRouter";
+import { Navbar } from "../widgets/Navbar/Navbar";
+import { useTheme } from "./providers/theme/useTheme";
+import { classNames } from "../shared/lib/classNames";
 
 export function App() {
     const { theme, toggleTheme } = useTheme();
@@ -13,4 +13,4 @@ export function App() {
             <AppRouter></AppRouter>
         </div>
     );
-    }
+}

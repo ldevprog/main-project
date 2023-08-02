@@ -1,4 +1,4 @@
-import { AppRouter } from "app/providers/router/AppRouter";
+import { AppRouter } from "app/providers/router/ui/AppRouter";
 import { Navbar } from "widgets/Navbar/Navbar";
 import { useTheme } from "app/providers/ThemeProvider/lib/useTheme";
 import { classNames } from "shared/lib/classNames";
@@ -8,9 +8,9 @@ export function App() {
 
     return (
         <div className={classNames("app", {}, [theme])}>
-            <Navbar></Navbar>
+            <Navbar />
             <button onClick={toggleTheme}>Toggle theme</button>
-            <AppRouter></AppRouter>
+            <AppRouter />
         </div>
     );
 }

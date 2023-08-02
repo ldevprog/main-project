@@ -4,6 +4,6 @@ export const AboutPageAsync = lazy(
     () =>
         new Promise((res) => {
             // @ts-ignore
-            setTimeout(() => res(import("./AboutPage")), 300);
+            setTimeout(() => res(import("../ui/AboutPage")), 300);
         })
 );

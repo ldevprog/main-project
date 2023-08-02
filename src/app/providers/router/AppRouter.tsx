@@ -1,17 +1,16 @@
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import classes from "./AppRouter.module.scss";
-
-import { HomePageAsync } from "../../pages/HomePage/HomePage.async";
-import { AboutPageAsync } from "../../pages/AboutPage/AboutPage.async";
+import { HomePage } from "pages/HomePage";
+import { AboutPage } from "pages/AboutPage";
 
 export function AppRouter() {
     return (
         <div className={classes.AppRouter}>
             <Suspense fallback={<div>Loading...</div>}>
                 <Routes>
-                    <Route path="/" element={<HomePageAsync />} />
-                    <Route path="/about" element={<AboutPageAsync />} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/about" element={<AboutPage />} />
                 </Routes>
             </Suspense>
         </div>

@@ -1,0 +1,46 @@
+.Switch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 32px;
+    width: 45px;
+    height: 20px;
+    transition: all 0.25s ease;
+    padding: 3px;
+
+    &.__active {
+        background-color: #f1e5ff;
+    }
+
+    &.__active:hover {
+        background-color: #ead9ff;
+    }
+}
+
+.input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.roller {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    transition: transform .15s ease-out, background-color .1s ease;
+    width: 20px;
+    height: 20px;
+}
+
+.input:checked + .roller {
+    transform: translateX(125%);
+}

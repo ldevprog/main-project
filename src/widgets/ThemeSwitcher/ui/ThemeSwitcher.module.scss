@@ -1,5 +1,21 @@
 .ThemeSwitcher {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconLight {
+    width: 27px;
+    height: 27px;
+}
+
+.iconDark {
+    width: 25px;
+    height: 25px;
+}
+
+.icon {
+    path {
+        stroke: var(--main-color);
+    }
 }

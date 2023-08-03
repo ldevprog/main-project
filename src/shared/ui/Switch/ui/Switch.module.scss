@@ -7,7 +7,7 @@
     border-radius: 32px;
     width: 45px;
     height: 20px;
-    transition: all 0.25s ease;
+    transition: all .1s ease;
     padding: 3px;
 
     &.__active {
@@ -36,7 +36,7 @@
     align-items: center;
     border-radius: 50%;
     background-color: var(--main-color);
-    transition: transform .15s ease-out, background-color .1s ease;
+    transition: all .1s ease;
     width: 20px;
     height: 20px;
 }

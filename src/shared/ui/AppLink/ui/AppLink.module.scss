@@ -4,6 +4,22 @@
     transition: all 0.1s ease;
 }
 
+.primary {
+    color: var(--main-color);
+
+    &:hover {
+        color: var(--hover-main-color);
+    }
+}
+
+.secondary {
+    color: var(--secondary-color);
+
+    &:hover {
+        color: var(--hover-secondary-color);
+    }
+}
+
 .inverted-primary {
     color: var(--inverted-main-color);
 

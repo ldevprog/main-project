@@ -11,19 +11,19 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
     return (
         <nav className={classNames(cls.Navbar, {}, [className])}>
-            <ThemeSwitcher />
             <ul>
                 <li>
-                    <AppLink to="/" theme={AppLinkTheme.INVERTED_PRIMARY}>
+                    <AppLink to="/" theme={AppLinkTheme.PRIMARY}>
                         Home page
                     </AppLink>
                 </li>
                 <li>
-                    <AppLink to="/about" theme={AppLinkTheme.INVERTED_PRIMARY}>
+                    <AppLink to="/about" theme={AppLinkTheme.PRIMARY}>
                         About page
                     </AppLink>
                 </li>
             </ul>
+            <ThemeSwitcher />
         </nav>
     );
 };

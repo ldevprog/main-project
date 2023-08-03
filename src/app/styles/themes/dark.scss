@@ -1,6 +1,17 @@
 .app.dark {
+    // color
     --main-color: #fff;
-    --secondary-color: #e4e4e4;
-
-    --background-color: #626262;
+    --secondary-color: #cbcaca;
+    // hover-color
+    --hover-main-color: #c6b5b5;
+    --hover-secondary-color: #a99595;
+    // inverted-color
+    --inverted-main-color: #000;
+    --inverted-secondary-color: #808080;
+    // hover-inverted-color
+    --hover-inverted-main-color: #696969;
+    --hover-inverted-secondary-color: #494949;
+    // background
+    --bg-color: #626262;
+    --inverted-bg-color: #fff;
 }

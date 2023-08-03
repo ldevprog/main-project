@@ -1,6 +1,17 @@
 .app.light {
+    // color
     --main-color: #000;
     --secondary-color: #808080;
-
-    --background-color: #fff;
+    // hover-color
+    --hover-main-color: #696969;
+    --hover-secondary-color: #494949;
+    // inverted-color
+    --inverted-main-color: #fff;
+    --inverted-secondary-color: #cbcaca;
+    // hover-inverted-color
+    --hover-inverted-main-color: #c6b5b5;
+    --hover-inverted-secondary-color: #a99595;
+    // background
+    --bg-color: #fff;
+    --inverted-bg-color: #626262;
 }

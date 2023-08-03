@@ -5,6 +5,12 @@ import { BuildOptions } from "./types/config";
 export function buildLoaders(options: BuildOptions): RuleSetRule[] {
     const { isDev } = options;
 
+    const svgLoader = {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ["@svgr/webpack"],
+    };
+
     const cssLoader = {
         test: /\.s[a|c]ss$/,
         use: [
@@ -30,5 +36,5 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
         exclude: /node_modules/,
     };
 
-    return [cssLoader, typescriptLoader];
+    return [svgLoader, cssLoader, typescriptLoader];
 }

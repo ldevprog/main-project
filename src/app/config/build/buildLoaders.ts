@@ -5,6 +5,15 @@ import { BuildOptions } from "./types/config";
 export function buildLoaders(options: BuildOptions): RuleSetRule[] {
     const { isDev } = options;
 
+    const babelLoader = {
+        test: /\.(js|jsx|tsx|ts)$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        options: {
+            presets: ["@babel/preset-env"],
+        },
+    };
+
     const fileLoader = {
         test: /\.(png|jpe?g|gif|woff2|woff)$/i,
         loader: "file-loader",
@@ -46,5 +55,5 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
         exclude: /node_modules/,
     };
 
-    return [fileLoader, svgLoader, cssLoader, typescriptLoader];
+    return [babelLoader, fileLoader, svgLoader, cssLoader, typescriptLoader];
 }

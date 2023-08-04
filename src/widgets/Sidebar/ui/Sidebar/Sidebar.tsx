@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
 import cls from "./Sidebar.module.scss";
-import { useState } from "react";
 
 interface SidebarProps {
     className?: string;

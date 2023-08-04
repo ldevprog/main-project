@@ -3,27 +3,34 @@ import { AppLink } from "shared/ui/AppLink";
 import { AppLinkTheme } from "shared/ui/AppLink";
 import cls from "./Navbar.module.scss";
 import { ThemeSwitcher } from "widgets/ThemeSwitcher";
+import { LangSwitcher } from "widgets/LangSwitcher";
+import { useTranslation } from "react-i18next";
 
 interface NavbarProps {
     className?: string;
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
+    const { t } = useTranslation();
+
     return (
         <nav className={classNames(cls.Navbar, {}, [className])}>
             <ul>
                 <li>
                     <AppLink to="/" theme={AppLinkTheme.PRIMARY}>
-                        Home page
+                        {t("Main")}
                     </AppLink>
                 </li>
                 <li>
                     <AppLink to="/about" theme={AppLinkTheme.PRIMARY}>
-                        About page
+                        {t("About")}
                     </AppLink>
                 </li>
             </ul>
-            <ThemeSwitcher />
+            <div className={cls.switchers}>
+                <ThemeSwitcher />
+                <LangSwitcher />
+            </div>
         </nav>
     );
 };

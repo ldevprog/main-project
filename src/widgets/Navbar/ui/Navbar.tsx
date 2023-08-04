@@ -1,6 +1,6 @@
 import { classNames } from "shared/lib/classNames/classNames";
 import { AppLink } from "shared/ui/AppLink";
-import { AppLinkTheme } from "shared/ui/AppLink";
+import { ThemeAppLink } from "shared/ui/AppLink";
 import cls from "./Navbar.module.scss";
 import { ThemeSwitcher } from "widgets/ThemeSwitcher";
 import { LangSwitcher } from "widgets/LangSwitcher";
@@ -17,12 +17,12 @@ export const Navbar = ({ className }: NavbarProps) => {
         <nav className={classNames(cls.Navbar, {}, [className])}>
             <ul>
                 <li>
-                    <AppLink to="/" theme={AppLinkTheme.PRIMARY}>
+                    <AppLink to="/" theme={ThemeAppLink.PRIMARY}>
                         {t("Main")}
                     </AppLink>
                 </li>
                 <li>
-                    <AppLink to="/about" theme={AppLinkTheme.PRIMARY}>
+                    <AppLink to="/about" theme={ThemeAppLink.PRIMARY}>
                         {t("About")}
                     </AppLink>
                 </li>

@@ -5,6 +5,16 @@ import { BuildOptions } from "./types/config";
 export function buildLoaders(options: BuildOptions): RuleSetRule[] {
     const { isDev } = options;
 
+    const fileLoader = {
+        test: /\.(png|jpe?g|gif|woff2|woff)$/i,
+        loader: "file-loader",
+        options: {
+            name() {
+                return isDev ? "[path][name].[ext]" : "[contenthash].[ext]";
+            },
+        },
+    };
+
     const svgLoader = {
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
@@ -36,5 +46,5 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
         exclude: /node_modules/,
     };
 
-    return [svgLoader, cssLoader, typescriptLoader];
+    return [fileLoader, svgLoader, cssLoader, typescriptLoader];
 }

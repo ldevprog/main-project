@@ -7,7 +7,16 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: var(--bg-color);
+    background-color: var(--bg-main-color);
     color: var(--main-color);
     font: var(--font-m);
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.body {
+    padding: 20px 30px;
 }

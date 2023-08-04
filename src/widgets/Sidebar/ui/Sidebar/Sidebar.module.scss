@@ -1,0 +1,9 @@
+.Sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-third-color);
+    transition: width .2s ease;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+}

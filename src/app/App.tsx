@@ -2,8 +2,7 @@ import { AppRouter } from "app/providers/router/ui/AppRouter";
 import { Navbar } from "widgets/Navbar";
 import { useTheme } from "app/providers/ThemeProvider/lib/useTheme";
 import { classNames } from "shared/lib/classNames/classNames";
-
-import TestPng from "shared/assets/icons/test-png.png";
+import { Sidebar } from "widgets/Sidebar";
 
 export function App() {
     const { theme } = useTheme();
@@ -11,8 +10,12 @@ export function App() {
     return (
         <div className={classNames("app", {}, [theme])}>
             <Navbar />
-            <AppRouter />
-            <img src={TestPng} alt="" />
+            <div className="content">
+                <Sidebar />
+                <div className="body">
+                    <AppRouter />
+                </div>
+            </div>
         </div>
     );
 }

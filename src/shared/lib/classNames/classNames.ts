@@ -1,7 +1,7 @@
 type Mods = Record<string, boolean | string>;
 
 export function classNames(
-    cls: string = "",
+    cls = "",
     mods: Mods = {},
     additional: string[] = []
 ): string {

@@ -5,18 +5,10 @@
     background-color: transparent;
     border: 1px solid var(--main-color);
     border-radius: 32px;
-    width: 45px;
-    height: 20px;
+    width: 55px;
+    height: 28px;
     transition: all .1s ease;
     padding: 3px;
-
-    &.__active {
-        background-color: #f1e5ff;
-    }
-
-    &.__active:hover {
-        background-color: #ead9ff;
-    }
 }
 
 .input {
@@ -24,10 +16,10 @@
     width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px;
     overflow: hidden;
     white-space: nowrap;
     border-width: 0;
+    opacity: 0;
 }
 
 .roller {
@@ -42,5 +34,5 @@
 }
 
 .input:checked + .roller {
-    transform: translateX(125%);
+    transform: translateX(130%);
 }

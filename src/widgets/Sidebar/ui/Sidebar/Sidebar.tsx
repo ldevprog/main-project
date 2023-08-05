@@ -19,7 +19,9 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 className,
             ])}
         >
-            <button onClick={toggleSidebar}>toggle</button>
+            <button type="button" onClick={toggleSidebar}>
+                toggle
+            </button>
         </div>
     );
 };

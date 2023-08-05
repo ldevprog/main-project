@@ -15,6 +15,7 @@ module.exports = {
         "react/react-in-jsx-scope": 0,
         "@typescript-eslint/no-unused-vars": 1,
         "@typescript-eslint/ban-ts-comment": 0,
+        "react/button-has-type": 2,
     },
     settings: {
         react: {

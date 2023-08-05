@@ -1,6 +1,6 @@
 import path from "path";
-import { buildWebpackConfig } from "./src/app/config/build/buildWebpackConfig";
-import { BuildEnv } from "./src/app/config/build/types/config";
+import { buildWebpackConfig } from "./config/build/buildWebpackConfig";
+import { BuildEnv } from "./config/build/types/config";
 
 export default (env: BuildEnv) => {
     const paths = {

@@ -3,6 +3,7 @@ module.exports = {
     extends: [
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:i18next/recommended",
     ],
     parserOptions: {
         ecmaVersion: "esnext",
@@ -22,4 +23,5 @@ module.exports = {
             version: "detect",
         },
     },
+    plugins: ["i18next"],
 };

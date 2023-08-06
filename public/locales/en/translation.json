@@ -3,5 +3,9 @@
   "language": "Русский",
   "Main": "Main",
   "toggle": "toggle",
-  "Page not found": "Page not found"
+  "Page not found": "Page not found",
+  "An error occurred": "An error occurred",
+  "Reload": "Reload",
+  "Try reload": "Please, try to reload",
+  "Throw error": "Throw error"
 }

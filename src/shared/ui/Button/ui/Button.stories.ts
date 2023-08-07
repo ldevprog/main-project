@@ -4,9 +4,6 @@ import { Button, ThemeButton } from "./Button";
 const meta = {
     title: "shared/Button",
     component: Button,
-    parameters: {
-        layout: "centered",
-    },
     tags: ["autodocs"],
     args: { children: "Test" },
     argTypes: {

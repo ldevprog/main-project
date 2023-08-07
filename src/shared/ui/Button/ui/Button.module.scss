@@ -8,3 +8,11 @@
     font: var(--font-m);
     color: var(--main-color);
 }
+
+.outline {
+    border: 1px solid #000;
+    padding: 7px 12px;
+    border-radius: 12px;
+    font: var(--font-m);
+    background-color: transparent;
+}

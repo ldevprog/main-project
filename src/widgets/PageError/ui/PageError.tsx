@@ -21,7 +21,7 @@ export const PageError = ({ className }: PageErrorProps) => {
                 <div>{t("Try reload")}</div>
             </div>
             <Button
-                theme={ThemeButton.CLEAN}
+                theme={ThemeButton.OUTLINE}
                 className={cls.btnReload}
                 onClick={reloadPage}
             >

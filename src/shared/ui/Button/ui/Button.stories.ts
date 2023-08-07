@@ -26,3 +26,9 @@ export const Clean: Story = {
         theme: ThemeButton.CLEAN,
     },
 };
+
+export const Outline: Story = {
+    args: {
+        theme: ThemeButton.OUTLINE,
+    },
+};

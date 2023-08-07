@@ -19,11 +19,16 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
     return (
         <div
+            data-testid="sidebar"
             className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
                 className,
             ])}
         >
-            <button type="button" onClick={toggleSidebar}>
+            <button
+                data-testid="button-toggle"
+                type="button"
+                onClick={toggleSidebar}
+            >
                 {t("toggle")}
             </button>
             <BugButton />

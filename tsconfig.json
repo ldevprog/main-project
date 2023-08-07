@@ -39,5 +39,6 @@
         "compilerOptions": {
             "module": "CommonJS"
         }
-    }
+    },
+    "include": ["./**/*.ts", "./**/*.tsx", "config/jest/jest-setup.ts"]
 }

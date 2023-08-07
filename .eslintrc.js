@@ -24,4 +24,12 @@ module.exports = {
         },
     },
     plugins: ["i18next"],
+    overrides: [
+        {
+            files: ["**/src/**/*.test.{ts,tsx}"],
+            rules: {
+                "i18next/no-literal-string": 0,
+            },
+        },
+    ],
 };

@@ -4,7 +4,7 @@
     transition: all 0.1s ease;
 }
 
-.primary {
+.main {
     color: var(--main-color);
 
     &:hover {
@@ -20,18 +20,10 @@
     }
 }
 
-.inverted-primary {
+.inverted-main {
     color: var(--inverted-main-color);
 
     &:hover {
         color: var(--hover-inverted-main-color);
-    }
-}
-
-.inverted-secondary {
-    color: var(--inverted-secondary-color);
-
-    &:hover {
-        color: var(--hover-inverted-secondary-color);
     }
 }

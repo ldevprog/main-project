@@ -1,4 +1,4 @@
-import { useTheme } from "app/providers/ThemeProvider";
+import { Theme, useTheme } from "app/providers/ThemeProvider";
 import { classNames } from "shared/lib/classNames/classNames";
 import { Switch } from "shared/ui/Switch";
 import LightIcon from "shared/assets/icons/theme-light.svg";
@@ -15,7 +15,7 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
     return (
         <div className={classNames(cls.ThemeSwitcher, {}, [className])}>
             <LightIcon className={classNames(cls.icon, {}, [cls.iconLight])} />
-            <Switch theme={theme} handleChange={changeTheme} />
+            <Switch checked={theme === Theme.DARK} handleChange={changeTheme} />
             <DarkIcon className={classNames(cls.icon, {}, [cls.iconDark])} />
         </div>
     );

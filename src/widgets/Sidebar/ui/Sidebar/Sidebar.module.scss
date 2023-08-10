@@ -2,6 +2,7 @@
     width: var(--sidebar-width);
     background-color: var(--bg-third-color);
     transition: width .2s ease;
+    height: 100%;
 }
 
 .collapsed {

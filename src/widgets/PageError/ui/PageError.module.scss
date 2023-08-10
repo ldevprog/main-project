@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 10px;
     height: 100vh;
-    background-color: #ccc;
+    background-color: var(--bg-main-color)
 }
 
 .textInfo {
@@ -15,8 +15,8 @@
 
 .btnReload {
     &:hover {
-        background-color: #3f3f3f;
-        color: #dbdbdb;
+        background-color: var(--main-color);
+        color: var(--inverted-main-color);
         transition: all .1s ease;
     }
 }

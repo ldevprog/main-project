@@ -18,7 +18,7 @@ export const PageError = ({ className }: PageErrorProps) => {
         <div className={classNames(cls.PageError, {}, [className])}>
             <div className={cls.textInfo}>
                 <div>{t("An error occurred")}</div>
-                <div>{t("Try reload")}</div>
+                <div>{t("Try to reload")}</div>
             </div>
             <Button
                 theme={ThemeButton.OUTLINE}

@@ -5,7 +5,7 @@ import cls from "./Switch.module.scss";
 interface SwitchProps {
     className?: string;
     checked: boolean;
-    handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Switch: FC<SwitchProps> = ({

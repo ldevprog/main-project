@@ -16,6 +16,9 @@ jobs:
             - name: Bootstraping packages
               run: yarn
 
+            - name: Build production
+              run: yarn build:prod
+
             - name: Linting
               run: yarn lint
 

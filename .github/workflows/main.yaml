@@ -12,7 +12,7 @@ jobs:
                 node-version: [12.x]
 
         steps:
-            -uses: ../
+            -uses: ../package.json
             - name: Bootstraping packages
               run: yarn
             - name: Linting

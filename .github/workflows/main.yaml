@@ -13,9 +13,7 @@ jobs:
 
         steps:
             - name: Bootstraping packages
-              run: yarn install
-            - name: Linting
-              run: yarn lint
+              run: yarn
             - name: Linting
               run: yarn lint
             - name: Linting typescript

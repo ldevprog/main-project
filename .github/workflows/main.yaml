@@ -25,11 +25,11 @@ jobs:
             - name: Linting css
               run: yarn lint:css
 
-            - name: Build storybook
-              run: yarn storybook:build
-
             - name: Test components
               run: yarn test:unit
+
+            - name: Build storybook
+              run: yarn storybook
 
             - name: Test ui
               run: yarn test:ui

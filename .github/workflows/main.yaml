@@ -1,35 +1,35 @@
 name: linting-building-testing
-  on:
+on:
     push:
-      branches: [main]
+        branches: [main]
     pull_request:
-      branches: [main]
+        branches: [main]
 jobs:
-  pipeline:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
+    pipeline:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [12.x]
 
-        steps:
-          - uses: actions/checkout@main
-          - name: Bootstraping packages
-            run: yarn
+                steps:
+                    - uses: actions/checkout@main
+                    - name: Bootstraping packages
+                      run: yarn
 
-          - name: Linting
-            run: yarn lint
+                    - name: Linting
+                      run: yarn lint
 
-          - name: Linting typescript
-            run: yarn lint:ts
+                    - name: Linting typescript
+                      run: yarn lint:ts
 
-          - name: Linting css
-            run: yarn lint:css
+                    - name: Linting css
+                      run: yarn lint:css
 
-          - name: Build storybook
-            run: yarn storybook:build
+                    - name: Build storybook
+                      run: yarn storybook:build
 
-          - name: Test components
-            run: yarn test:unit
+                    - name: Test components
+                      run: yarn test:unit
 
-          - name: Test ui
-            run: yarn test:ui
+                    - name: Test ui
+                      run: yarn test:ui

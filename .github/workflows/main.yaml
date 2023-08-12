@@ -13,7 +13,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@main
-            - name: Bootstraping packages
+            - name: Installing modules
               run: yarn
 
             - name: Build production

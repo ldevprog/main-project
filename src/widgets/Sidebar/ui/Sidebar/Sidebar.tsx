@@ -3,6 +3,7 @@ import { classNames } from "shared/lib/classNames/classNames";
 import cls from "./Sidebar.module.scss";
 import { useTranslation } from "react-i18next";
 import { BugButton } from "app/providers/ErrorBoundary/ui/BugButton";
+import { Button } from "shared/ui/Button";
 
 interface SidebarProps {
     className?: string;
@@ -24,13 +25,13 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 className,
             ])}
         >
-            <button
+            <Button
                 data-testid="button-toggle"
                 type="button"
                 onClick={toggleSidebar}
             >
                 {t("toggle")}
-            </button>
+            </Button>
             <BugButton />
         </div>
     );

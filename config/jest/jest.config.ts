@@ -31,6 +31,7 @@ export default {
         "tsx",
         "json",
         "node",
+        "scss",
     ],
 
     // The root directory that Jest should scan for tests and modules within

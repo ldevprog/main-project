@@ -12,7 +12,7 @@ jobs:
                 node-version: [12.x]
 
         steps:
-            - uses: actions/checkout@v2.1.0
+            - uses: actions/checkout@main
             - name: Bootstraping packages
               run: yarn
 

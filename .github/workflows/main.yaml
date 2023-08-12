@@ -1,9 +1,9 @@
-on:
 name: linting-building-testing
-    push:
-        branches: [main]
-    pull_request:
-        branches: [main]
+    on:
+        push:
+            branches: [main]
+        pull_request:
+            branches: [main]
 jobs:
     check-bats-version:
         runs-on: ubuntu-latest

@@ -1,38 +1,40 @@
 name: linting-building-testing
 on:
-    push:
-        branches: [main]
-    pull_request:
-        branches: [main]
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
-    pipeline:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: [12.x]
+  pipeline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
 
-        steps:
-            - uses: actions/checkout@main
-            - name: Installing modules
-              run: yarn
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/cache@v3
 
-            - name: Build production
-              run: yarn build:prod
+    - name: installing modules
+      run: yarn
 
-            - name: Linting
-              run: yarn lint
+    - name: build production
+      run: yarn build:prod
 
-            - name: Linting typescript
-              run: yarn lint:ts
+    - name: linting
+      run: yarn lint
 
-            - name: Linting css
-              run: yarn lint:css
+    - name: linting typescript
+      run: yarn lint:ts
 
-            - name: Test components
-              run: yarn test:unit
+    - name: linting css
+      run: yarn lint:css
 
-            - name: Build storybook
-              run: yarn storybook
+    - name: unit testing
+      run: yarn test:unit
 
-            - name: Test ui
-              run: yarn test:ui
+    - name: build storybook
+      run: yarn storybook
+
+    - name: test ui
+      run: yarn test:ui

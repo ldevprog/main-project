@@ -1,5 +1,5 @@
-name: linting-building-testing
 on:
+name: linting-building-testing
     push:
         branches: [main]
     pull_request:
@@ -12,17 +12,24 @@ jobs:
                 node-version: [12.x]
 
         steps:
+            - uses: actions/checkout@v2.1.0
             - name: Bootstraping packages
               run: yarn
+
             - name: Linting
               run: yarn lint
+
             - name: Linting typescript
               run: yarn lint:ts
+
             - name: Linting css
               run: yarn lint:css
+
             - name: Build storybook
               run: yarn storybook:build
+
             - name: Test components
               run: yarn test:unit
+
             - name: Test ui
               run: yarn test:ui

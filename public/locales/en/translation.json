@@ -1,11 +1,12 @@
 {
-    "About": "About",
-    "language": "Русский",
-    "Main": "Main",
-    "toggle": "toggle",
-    "Page not found": "Page not found",
-    "An error occurred": "An error occurred",
-    "Reload": "Reload",
-    "Try to reload": "Please, try to reload",
-    "Throw error": "Throw error"
+  "About": "About",
+  "language": "Русский",
+  "Main": "Main",
+  "toggle": "toggle",
+  "Page not found": "Page not found",
+  "An error occurred": "An error occurred",
+  "Reload": "Reload",
+  "Try to reload": "Please, try to reload",
+  "Throw error": "Throw error",
+  "Hello": "Hello"
 }

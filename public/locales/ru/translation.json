@@ -1,11 +1,12 @@
 {
-    "About": "O сайте",
-    "language": "English",
-    "Main": "Главная",
-    "toggle": "тогл",
-    "Page not found": "Страница не найдена",
-    "An error occurred": "Произошла ошибка",
-    "Reload": "Перезагрузить",
-    "Try to reload": "Пожалуйста, попробуйте обновить страницу",
-    "Throw error": "Выбросить ошибку"
+  "About": "O сайте",
+  "language": "English",
+  "Main": "Главная",
+  "toggle": "тогл",
+  "Page not found": "Страница не найдена",
+  "An error occurred": "Произошла ошибка",
+  "Reload": "Перезагрузить",
+  "Try to reload": "Пожалуйста, попробуйте обновить страницу",
+  "Throw error": "Выбросить ошибку",
+  "Hello": "Приветствие"
 }

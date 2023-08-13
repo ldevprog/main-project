@@ -21,6 +21,8 @@ jobs:
       run: yarn install
     - name: building production
       run: yarn build:prod
+    - name: linting
+      run: yarn lint
     - name: linting typescript
       run: yarn lint:ts
     - name: linting css

@@ -35,5 +35,5 @@ jobs:
     - name: build storybook
       run: yarn storybook:build
 
-    - name: test ui
+    - name: screenshot testing
       run: yarn test:ui:ci

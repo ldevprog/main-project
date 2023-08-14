@@ -26,11 +26,6 @@ export const Navbar = ({ className }: NavbarProps) => {
                         {t("About")}
                     </AppLink>
                 </li>
-                <li>
-                    <AppLink to="/hello" theme={ThemeAppLink.MAIN}>
-                        {t("Hello")}
-                    </AppLink>
-                </li>
             </ul>
             <div className={cls.switchers}>
                 <ThemeSwitcher />

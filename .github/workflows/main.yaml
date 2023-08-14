@@ -30,5 +30,7 @@ jobs:
       run: yarn storybook:build
     - name: publishing to chromatic
       uses: chromaui/action@v1
+      with:
+        projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
     # - name: screenshot testing
     #   run: yarn chromatic

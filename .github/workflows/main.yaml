@@ -32,5 +32,6 @@ jobs:
       uses: chromaui/action@v1
       with:
         projectToken: ${CHROMATIC_PROJECT_TOKEN}
+        buildScriptName: storybook:build
     # - name: screenshot testing
     #   run: yarn chromatic

@@ -1,11 +1,12 @@
 import type { Preview } from "@storybook/react";
 import "app/styles/index.scss";
 import { ThemeDecorator } from "shared/lib/storybook/ThemeDecorator";
-import { Theme } from "app/providers/ThemeProvider";
 import { RouterDecorator } from "shared/lib/storybook/RouterDecorator";
+import { Theme } from "app/providers/ThemeProvider";
 
 const preview: Preview = {
     parameters: {
+        layout: "fullscreen",
         actions: { argTypesRegex: "^on[A-Z].*" },
         controls: {
             matchers: {
@@ -14,7 +15,7 @@ const preview: Preview = {
             },
         },
     },
-    decorators: [ThemeDecorator(Theme.LIGHT), RouterDecorator()],
+    decorators: [ThemeDecorator(Theme.LIGHT), RouterDecorator],
 };
 
 export default preview;

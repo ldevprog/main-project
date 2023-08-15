@@ -33,5 +33,3 @@ jobs:
       with:
         projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         buildScriptName: storybook:build
-    # - name: screenshot testing
-    #   run: yarn chromatic

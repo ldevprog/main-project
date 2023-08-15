@@ -5,8 +5,8 @@ import "app/styles/index.scss";
 import "shared/config/i18n/i18n";
 import { ThemeProvider } from "app/providers/ThemeProvider";
 import { ErrorBoundary } from "app/providers/ErrorBoundary";
-import * as dotenv from "dotenv";
-dotenv.config();
+import { config } from "dotenv";
+config();
 
 const root = createRoot(document.getElementById("root"));
 root.render(

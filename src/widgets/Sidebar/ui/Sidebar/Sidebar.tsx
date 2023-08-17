@@ -29,7 +29,11 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 className,
             ])}
         >
-            <div className={cls.iconWrapper} onClick={toggleSidebar}>
+            <div
+                data-testid="sidebar-toggler"
+                className={cls.iconWrapper}
+                onClick={toggleSidebar}
+            >
                 {collapsed ? (
                     <SidebarRight className={cls.icon} />
                 ) : (

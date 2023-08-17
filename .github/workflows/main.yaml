@@ -23,10 +23,13 @@ jobs:
     - name: linting typescript
       run: yarn lint:ts
     - name: linting css
+      if: always()
       run: yarn lint:css
     - name: unit testing
+      if: always()
       run: yarn test:unit
     - name: building storybook
+      if: always()
       run: yarn storybook:build
     - name: publishing to chromatic
       uses: chromaui/action@v1

@@ -20,20 +20,19 @@
     }
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
-    align-items: center;
+.icon {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    justify-self: center;
 
-    .link {
-        padding-inline: 0;
-        margin: 0;
+    path {
+        stroke: var(--main-color);
+    }
 
-        &:hover {
-            background-color: unset;
-        }
-
-        .linkText {
-            display: none;
+    &:hover {
+        path {
+            stroke: var(--hover-main-color);
         }
     }
 }
@@ -45,7 +44,7 @@
     gap: 20px;
     width: 100%;
     border-radius: 10px;
-    padding: 8px 8px;
+    padding: 8px;
     margin-inline: -8px;
 
     .linkIcon {
@@ -69,27 +68,28 @@
     }
 }
 
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+    align-items: center;
+
+    .link {
+        padding-inline: 0;
+        margin: 0;
+
+        &:hover {
+            background-color: unset;
+        }
+
+        .linkText {
+            display: none;
+        }
+    }
+}
+
 .iconWrapper {
     width: 34px;
     height: 34px;
     margin-bottom: 40px;
-}
-
-.icon {
-    width: 34px;
-    height: 34px;
-    cursor: pointer;
-    justify-self: center;
-
-    path {
-        stroke: var(--main-color);
-    }
-
-    &:hover {
-        path {
-            stroke: var(--hover-main-color);
-        }
-    }
 }
 
 .iconAbout {

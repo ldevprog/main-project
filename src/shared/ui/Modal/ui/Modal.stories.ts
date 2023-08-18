@@ -7,8 +7,14 @@ const meta = {
     title: "shared/Modal",
     component: Modal,
     tags: ["autodocs"],
-    args: {},
-    argTypes: {},
+    args: {
+        isOpen: true,
+        children: `
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Esse, officiis quo cum cumque nobis obcaecati vero,
+            doloremque placeat, perspiciatis dolorem animi quos quidem
+            officia blanditiis in.`,
+    },
 } satisfies Meta<typeof Modal>;
 
 export default meta;

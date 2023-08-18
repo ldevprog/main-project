@@ -2,6 +2,7 @@ module.exports = {
     parser: "@typescript-eslint/parser",
     extends: [
         "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:i18next/recommended",
         "plugin:storybook/recommended",
@@ -19,13 +20,15 @@ module.exports = {
         "@typescript-eslint/ban-ts-comment": 0,
         "react/button-has-type": 2,
         "react/display-name": 0,
+        "react-hooks/rules-of-hooks": 2,
+        "react-hooks/exhaustive-deps": 2,
     },
     settings: {
         react: {
             version: "detect",
         },
     },
-    plugins: ["i18next"],
+    plugins: ["react", "react-hooks", "i18next"],
     overrides: [
         {
             files: ["**/src/**/*.test.{ts,tsx}"],

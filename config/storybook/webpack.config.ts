@@ -12,6 +12,7 @@ export default ({ config }: { config: Configuration }) => {
         src: path.resolve(__dirname, "..", "..", "src"),
     };
 
+    config!.resolve!.alias = { "@": paths.src };
     config.resolve?.modules?.push(paths.src);
     config.resolve?.extensions?.push(".ts", ".tsx");
 

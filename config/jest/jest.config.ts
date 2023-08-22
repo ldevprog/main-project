@@ -57,6 +57,7 @@ export default {
         "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
             path.resolve(__dirname, "jestEmptyComponent.tsx"),
         "\\.(scss|css)$": "identity-obj-proxy",
+        "^@/(.*)$": "<rootDir>src/$1",
     },
 
     // Indicates whether the coverage information should be collected while executing the test

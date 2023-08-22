@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Modal } from "./Modal";
-import { ThemeDecorator } from "shared/lib/storybook/ThemeDecorator";
-import { Theme } from "app/providers/ThemeProvider";
+import { ThemeDecorator } from "@/shared/lib/storybook/ThemeDecorator";
+import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "shared/Modal",
+    title: "@/shared/Modal",
     component: Modal,
     tags: ["autodocs"],
     args: {

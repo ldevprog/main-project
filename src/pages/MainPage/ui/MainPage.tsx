@@ -1,8 +1,8 @@
 /* eslint-disable i18next/no-literal-string */
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Button, ThemeButton } from "shared/ui/Button";
-import { Modal } from "shared/ui/Modal";
+import { Button, ThemeButton } from "@/shared/ui/Button";
+import { Modal } from "@/shared/ui/Modal";
 
 function Main() {
     const { t } = useTranslation("main");

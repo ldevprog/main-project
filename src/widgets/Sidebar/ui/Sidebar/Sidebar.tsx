@@ -1,13 +1,13 @@
 import cls from "./Sidebar.module.scss";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { classNames } from "shared/lib/classNames/classNames";
-import { AppLink } from "shared/ui/AppLink";
-import { ThemeAppLink } from "shared/ui/AppLink";
-import SidebarLeft from "shared/assets/icons/sidebar-left.svg";
-import SidebarRight from "shared/assets/icons/sidebar-right.svg";
-import Home from "shared/assets/icons/home.svg";
-import About from "shared/assets/icons/about.svg";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import { AppLink } from "@/shared/ui/AppLink";
+import { ThemeAppLink } from "@/shared/ui/AppLink";
+import SidebarLeft from "@/shared/assets/icons/sidebar-left.svg";
+import SidebarRight from "@/shared/assets/icons/sidebar-right.svg";
+import Home from "@/shared/assets/icons/home.svg";
+import About from "@/shared/assets/icons/about.svg";
 
 interface SidebarProps {
     className?: string;

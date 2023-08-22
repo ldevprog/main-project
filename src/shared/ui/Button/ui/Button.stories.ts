@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button, ThemeButton } from "./Button";
-import { ThemeDecorator } from "shared/lib/storybook/ThemeDecorator";
-import { Theme } from "app/providers/ThemeProvider";
+import { ThemeDecorator } from "@/shared/lib/storybook/ThemeDecorator";
+import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "shared/Button",
+    title: "@/shared/Button",
     component: Button,
     tags: ["autodocs"],
     args: { children: "Test" },

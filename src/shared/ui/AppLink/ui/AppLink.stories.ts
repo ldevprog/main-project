@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { AppLink, ThemeAppLink } from "./AppLink";
-import { ThemeDecorator } from "shared/lib/storybook/ThemeDecorator";
-import { Theme } from "app/providers/ThemeProvider";
+import { ThemeDecorator } from "@/shared/lib/storybook/ThemeDecorator";
+import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "shared/AppLink",
+    title: "@/shared/AppLink",
     component: AppLink,
     tags: ["autodocs"],
     args: { children: "Test", to: "/" },

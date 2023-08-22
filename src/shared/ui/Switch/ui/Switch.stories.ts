@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Switch } from "./Switch";
-import { ThemeDecorator } from "shared/lib/storybook/ThemeDecorator";
-import { Theme } from "app/providers/ThemeProvider";
+import { ThemeDecorator } from "@/shared/lib/storybook/ThemeDecorator";
+import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "shared/Switch",
+    title: "@/shared/Switch",
     component: Switch,
     tags: ["autodocs"],
     args: {

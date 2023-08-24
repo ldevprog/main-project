@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Switch } from "./Switch";
-import { ThemeDecorator } from "@/shared/lib/storybook/ThemeDecorator";
+import { ThemeDecorator } from "@/shared/config/storybook/ThemeDecorator";
 import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {

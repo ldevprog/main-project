@@ -6,14 +6,14 @@ import { MemoryRouter } from "react-router-dom";
 import { StateSchema, StoreProvider } from "@/app/providers/StoreProvider";
 import { DeepPartial } from "@reduxjs/toolkit";
 
-interface ComponentRenderOptions {
+interface componentRenderOptions {
     route?: string;
     initialState?: DeepPartial<StateSchema>;
 }
 
-export function ComponentRender(
+export function componentRender(
     component: ReactNode,
-    options: ComponentRenderOptions = {}
+    options: componentRenderOptions = {}
 ) {
     const { route = "/", initialState } = options;
 

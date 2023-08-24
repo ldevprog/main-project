@@ -1,15 +1,15 @@
 import { fireEvent, screen } from "@testing-library/react";
-import { componentRender } from "@/shared/lib/tests/componentRender";
+import { ComponentRender } from "@/shared/lib/tests/ComponentRender";
 import { Sidebar } from "@/widgets/Sidebar";
 
 describe("Sidebar", () => {
     test("Test render", () => {
-        componentRender(<Sidebar />);
+        ComponentRender(<Sidebar />);
         expect(screen.getByTestId("sidebar"));
     });
 
     test("Test toggle", () => {
-        componentRender(<Sidebar />);
+        ComponentRender(<Sidebar />);
         const toggleBtn = screen.getByTestId("sidebar-toggler");
         fireEvent.click(toggleBtn);
         expect(screen.getByTestId("sidebar")).toHaveClass("collapsed");

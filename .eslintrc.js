@@ -15,9 +15,10 @@ module.exports = {
         },
     },
     rules: {
-        "react/react-in-jsx-scope": 0,
         "@typescript-eslint/no-unused-vars": 1,
         "@typescript-eslint/ban-ts-comment": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "react/react-in-jsx-scope": 0,
         "react/button-has-type": 2,
         "react/display-name": 0,
         "react-hooks/rules-of-hooks": 2,

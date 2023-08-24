@@ -16,8 +16,6 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: List directory
-      run: ls -la ../src
     - name: installing modules
       run: yarn install
     - name: building production

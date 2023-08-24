@@ -3,7 +3,7 @@ import { Theme, ThemeProvider } from "@/app/providers/ThemeProvider";
 
 export const ThemeDecorator = (theme: Theme) => (Story: StoryFn) => {
     return (
-        <ThemeProvider themeProp={theme}>
+        <ThemeProvider initialTheme={theme}>
             <Story />
         </ThemeProvider>
     );

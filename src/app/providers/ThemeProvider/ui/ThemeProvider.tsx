@@ -7,18 +7,18 @@ import {
 
 interface Props {
     children: ReactNode;
-    themeProp: Theme;
+    initialTheme?: Theme;
 }
 
-export const ThemeProvider: FC<Props> = ({ children, themeProp }) => {
+export const ThemeProvider: FC<Props> = ({ children, initialTheme }) => {
     const defaultTheme =
         (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
 
-    const [theme, setTheme] = useState<Theme>(themeProp || defaultTheme);
+    const [theme, setTheme] = useState<Theme>(initialTheme || defaultTheme);
 
     useEffect(() => {
-        document.body.className = themeProp || theme;
-    }, [theme, themeProp]);
+        document.body.className = initialTheme || theme;
+    }, [theme, initialTheme]);
 
     const defaultProps = useMemo(() => ({ theme, setTheme }), [theme]);
 

@@ -12,6 +12,7 @@ export function useTheme(): UseThemeResult {
     function changeTheme(e: React.ChangeEvent<HTMLInputElement>) {
         const newTheme = e.target.checked ? Theme.DARK : Theme.LIGHT;
         setTheme(newTheme);
+        document.body.className = newTheme;
         localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
     }
 

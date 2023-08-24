@@ -8,6 +8,7 @@ import SidebarLeft from "@/shared/assets/icons/sidebar-left.svg";
 import SidebarRight from "@/shared/assets/icons/sidebar-right.svg";
 import Home from "@/shared/assets/icons/home.svg";
 import About from "@/shared/assets/icons/about.svg";
+import { BugButton } from "@/app/providers/ErrorBoundary/ui/BugButton";
 
 interface SidebarProps {
     className?: string;

@@ -4,7 +4,7 @@ import { ThemeDecorator } from "@/shared/config/storybook/ThemeDecorator";
 import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "@/shared/Loader",
+    title: "shared/Loader",
     component: Loader,
     tags: ["autodocs"],
     args: {},

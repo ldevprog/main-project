@@ -4,7 +4,7 @@ import { ThemeDecorator } from "@/shared/config/storybook/ThemeDecorator";
 import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "@/shared/AppLink",
+    title: "shared/AppLink",
     component: AppLink,
     tags: ["autodocs"],
     args: { children: "Test", to: "/" },

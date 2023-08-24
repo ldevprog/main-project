@@ -4,7 +4,7 @@ import { ThemeDecorator } from "@/shared/config/storybook/ThemeDecorator";
 import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "@/shared/Switch",
+    title: "shared/Switch",
     component: Switch,
     tags: ["autodocs"],
     args: {

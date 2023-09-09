@@ -1,25 +1,25 @@
 import { FC } from "react";
 import { classNames } from "@/shared/lib/classNames/classNames";
-import cls from "./AuthModal.module.scss";
+import cls from "./LoginModal.module.scss";
 import { Modal } from "@/shared/ui/Modal";
-import { AuthForm } from "../../AuthForm";
+import { LoginForm } from "../../LoginForm";
 
-interface AuthModalProps {
+interface LoginModalProps {
     className?: string;
     isOpen?: boolean;
     onClose?: () => void;
 }
 
-export const AuthModal: FC<AuthModalProps> = (props) => {
+export const LoginModal: FC<LoginModalProps> = (props) => {
     const { className, isOpen, onClose } = props;
 
     return (
         <Modal
-            className={classNames(cls.AuthModal, {}, [className])}
+            className={classNames(cls.LoginModal, {}, [className])}
             isOpen={isOpen}
             onClose={onClose}
         >
-            <AuthForm />
+            <LoginForm />
         </Modal>
     );
 };

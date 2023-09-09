@@ -19,7 +19,7 @@
 .content {
     padding: 20px;
     background-color: var(--bg-main-color);
-    width: 60%;
+    max-width: 60%;
     border-radius: 12px;
     transition: scale 0.2s ease;
     scale: 0.6;

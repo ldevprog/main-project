@@ -5,14 +5,14 @@ import { LangSwitcher } from "@/widgets/LangSwitcher";
 import { Button, ThemeButton } from "@/shared/ui/Button";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import { AuthModal } from "@/features/AuthByUsername/ui/AuthModal";
+import { LoginModal } from "@/features/LoginByUsername/ui/LoginModal";
 
 interface NavbarProps {
     className?: string;
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
-    const [isAuthModal, setIsAuthModal] = useState(false);
+    const [isLoginModal, setIsLoginModal] = useState(false);
 
     const { t } = useTranslation();
 
@@ -25,15 +25,15 @@ export const Navbar = ({ className }: NavbarProps) => {
                     <Button
                         className={cls.signInBtn}
                         theme={ThemeButton.OUTLINE}
-                        onClick={() => setIsAuthModal(true)}
+                        onClick={() => setIsLoginModal(true)}
                     >
                         {t("Sign In")}
                     </Button>
                 </div>
             </nav>
-            <AuthModal
-                isOpen={isAuthModal}
-                onClose={() => setIsAuthModal(false)}
+            <LoginModal
+                isOpen={isLoginModal}
+                onClose={() => setIsLoginModal(false)}
             />
         </>
     );

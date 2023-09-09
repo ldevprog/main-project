@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { AuthForm } from "./AuthForm";
+import { LoginModal } from "./LoginModal";
 import { ThemeDecorator } from "@/shared/config/storybook/ThemeDecorator";
 import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "shared/AuthForm",
-    component: AuthForm,
+    title: "shared/LoginModal",
+    component: LoginModal,
     tags: ["autodocs"],
     args: {},
     argTypes: {},
-} satisfies Meta<typeof AuthForm>;
+} satisfies Meta<typeof LoginModal>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

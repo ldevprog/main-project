@@ -24,7 +24,7 @@ export function buildPlugins(
             __IS_DEV__: JSON.stringify(isDev),
         }),
         new NodePolyfillPlugin(),
-    ].filter(Boolean);
+    ];
 
     if (isDev) {
         plugins.push(new ReactRefreshWebpackPlugin({ overlay: false }));

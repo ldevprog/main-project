@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { classNames } from "@/shared/lib/classNames/classNames";
 import cls from "./Switch.module.scss";
 
@@ -8,11 +7,9 @@ interface SwitchProps {
     handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Switch: FC<SwitchProps> = ({
-    className,
-    checked,
-    handleChange,
-}) => {
+export const Switch = (props: SwitchProps) => {
+    const { className, checked, handleChange } = props;
+
     return (
         <label className={classNames(cls.Switch, {}, [className])}>
             <input

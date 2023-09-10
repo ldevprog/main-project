@@ -22,6 +22,7 @@ function Main() {
                 <Modal
                     isOpen={isOpenModal}
                     onClose={() => setIsOpenModal(false)}
+                    lazy
                 >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Esse, officiis quo cum cumque nobis obcaecati vero,

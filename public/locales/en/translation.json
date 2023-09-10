@@ -9,5 +9,7 @@
   "Try to reload": "Please, try to reload",
   "Throw error": "Throw error",
   "Hello": "Hello",
-  "Sign In": "Sign In"
+  "Log In": "Log In",
+  "username": "username",
+  "password": "password"
 }

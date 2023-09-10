@@ -4,10 +4,10 @@ import { ThemeDecorator } from "@/shared/config/storybook/ThemeDecorator";
 import { Theme } from "@/app/providers/ThemeProvider";
 
 const meta = {
-    title: "shared/LoginModal",
+    title: "features/LoginModal",
     component: LoginModal,
     tags: ["autodocs"],
-    args: {},
+    args: { isOpen: true },
     argTypes: {},
 } satisfies Meta<typeof LoginModal>;
 

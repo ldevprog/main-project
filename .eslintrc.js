@@ -23,6 +23,7 @@ module.exports = {
         "react/display-name": 0,
         "react-hooks/rules-of-hooks": 2,
         "react-hooks/exhaustive-deps": 2,
+        "react/button-has-type": 0,
     },
     settings: {
         react: {

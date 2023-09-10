@@ -5,7 +5,7 @@ import { LangSwitcher } from "@/widgets/LangSwitcher";
 import { Button, ThemeButton } from "@/shared/ui/Button";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import { LoginModal } from "@/features/LoginByUsername/ui/LoginModal";
+import { LoginModal } from "@/features/LoginByUsername";
 
 interface NavbarProps {
     className?: string;
@@ -27,7 +27,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                         theme={ThemeButton.OUTLINE}
                         onClick={() => setIsLoginModal(true)}
                     >
-                        {t("Sign In")}
+                        {t("Log In")}
                     </Button>
                 </div>
             </nav>

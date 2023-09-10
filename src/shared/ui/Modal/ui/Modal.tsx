@@ -1,5 +1,4 @@
 import {
-    FC,
     MouseEvent,
     ReactNode,
     useCallback,
@@ -17,15 +16,23 @@ interface ModalProps {
     children?: ReactNode;
     isOpen?: boolean;
     onClose?: () => void;
+    lazy?: boolean;
 }
 
 const CLOSE_DELAY = 150;
 
-export const Modal: FC<ModalProps> = (props) => {
-    const { className, children, isOpen, onClose } = props;
+export const Modal = (props: ModalProps) => {
+    const { className, children, isOpen, onClose, lazy } = props;
 
     const [isClosing, setIsClosing] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
+
+    useEffect(() => {
+        if (isOpen) {
+            setIsMounted(true);
+        }
+    }, [isOpen]);
 
     const closeHandler = useCallback(() => {
         if (onClose) {
@@ -64,6 +71,8 @@ export const Modal: FC<ModalProps> = (props) => {
     const { theme } = useTheme();
 
     const mods: Mods = { [cls._opened]: isOpen, [cls._isClosing]: isClosing };
+
+    if (lazy && !isMounted) return null;
 
     return (
         <Portal>

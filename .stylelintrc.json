@@ -1,6 +1,7 @@
 {
     "extends": "stylelint-config-standard-scss",
     "rules": {
-        "selector-class-pattern": "^[a-zA-Z0-9_.-]*$"
+        "selector-class-pattern": "^[a-zA-Z0-9_.-]*$",
+        "custom-property-empty-line-before": "never"
     }
 }

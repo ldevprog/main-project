@@ -1,15 +1,10 @@
 /* eslint-disable i18next/no-literal-string */
-import { FC } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "@/shared/ui/Button";
 import { counterActions } from "@/entities/Counter";
 import { getCounterValue } from "../model/selectors/getCounterValue/getCounterValue";
 
-interface CounterProps {
-    className?: string;
-}
-
-export const Counter: FC<CounterProps> = ({ className }) => {
+export const Counter = () => {
     const counter = useSelector(getCounterValue);
     const dispatch = useDispatch();
 

@@ -2,3 +2,4 @@
 /dist
 /storybook-static
 /.env
+/build-storybook.log

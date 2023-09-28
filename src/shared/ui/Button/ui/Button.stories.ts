@@ -19,20 +19,31 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {};
 
 export const Clean: Story = {
-    args: {
-        theme: ThemeButton.CLEAN,
-    },
+    args: { theme: ThemeButton.CLEAN },
 };
 
 export const Outline: Story = {
-    args: {
-        theme: ThemeButton.OUTLINE,
-    },
+    args: { theme: ThemeButton.OUTLINE },
+};
+export const OutlineDark: Story = {
+    args: { theme: ThemeButton.OUTLINE },
+    decorators: [ThemeDecorator(Theme.DARK)],
 };
 
-export const OutlineDark: Story = {
-    args: {
-        theme: ThemeButton.OUTLINE,
-    },
+export const Disabled: Story = {
+    args: { disabled: true },
+};
+
+export const DisabledDark: Story = {
+    args: { disabled: true },
+    decorators: [ThemeDecorator(Theme.DARK)],
+};
+
+export const OutlineDisabled: Story = {
+    args: { disabled: true, theme: ThemeButton.OUTLINE },
+};
+
+export const OutlineDisabledDark: Story = {
+    args: { disabled: true, theme: ThemeButton.OUTLINE },
     decorators: [ThemeDecorator(Theme.DARK)],
 };

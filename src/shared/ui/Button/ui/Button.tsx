@@ -18,6 +18,7 @@ export const Button = (props: ButtonProps) => {
         children,
         theme,
         type = "button",
+        disabled,
         ...otherProps
     } = props;
 
@@ -25,7 +26,11 @@ export const Button = (props: ButtonProps) => {
         <button
             {...otherProps}
             type={type}
-            className={classNames(cls.Button, {}, [className, cls[theme]])}
+            className={classNames(cls.Button, { [cls.disabled]: disabled }, [
+                className,
+                cls[theme],
+            ])}
+            disabled={disabled}
         >
             {children}
         </button>

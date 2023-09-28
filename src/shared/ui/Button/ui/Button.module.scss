@@ -24,3 +24,13 @@
         color: var(--button-hover-color);
     }
 }
+
+.disabled {
+    cursor: default;
+    background-color: transparent !important;
+    border-color: var(--bg-main-color);
+
+    &:hover {
+        color: var(--main-color);
+    }
+}

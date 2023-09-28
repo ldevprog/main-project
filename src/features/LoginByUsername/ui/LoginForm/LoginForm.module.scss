@@ -1,6 +1,19 @@
 .LoginForm {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 12px 32px 24px;
+}
+
+.errorText {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.form {
     text-align: right;
+    height: 180px;
 }
 
 .inputs {
@@ -11,7 +24,8 @@
 }
 
 .input {
-    width: 300px;
+    width: 400px;
+    margin-top: auto;
 }
 
 .button {

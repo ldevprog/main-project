@@ -11,5 +11,8 @@
   "Hello": "Hello",
   "Log In": "Log In",
   "username": "username",
-  "password": "password"
+  "password": "password",
+  "Log In Form": "Log In form",
+  "login_incorrect": "Incorrect username or password",
+  "Log Out": "Log Out"
 }

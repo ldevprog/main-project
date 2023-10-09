@@ -28,7 +28,12 @@ export function buildPlugins(
 
     if (isDev) {
         plugins.push(new ReactRefreshWebpackPlugin({ overlay: false }));
-        plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
+        plugins.push(
+            new BundleAnalyzerPlugin({
+                openAnalyzer: false,
+                analyzerPort: 3333,
+            })
+        );
     }
 
     return plugins;
